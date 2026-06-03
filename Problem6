@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Problem6 {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        String correctPassword = "admin123";
+        int attempts = 3;
+
+        for (int i = 1; i <= attempts; i++) {
+
+            String password = sc.nextLine();
+
+            if (password.equals(correctPassword)) {
+                System.out.println("Login Successful");
+                return;
+            } else {
+                System.out.println("Incorrect Password");
+            }
+        }
+
+        System.out.println("Account Locked");
+    }
+}
