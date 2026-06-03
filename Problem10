@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Problem10 {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        boolean serverStatus = sc.nextBoolean();
+        boolean databaseStatus = sc.nextBoolean();
+
+        if (!serverStatus) {
+            System.out.println("Critical Error");
+        }
+        else if (!databaseStatus) {
+            System.out.println("Database Error");
+        }
+        else {
+            System.out.println("System Running Normally");
+        }
+    }
+}
