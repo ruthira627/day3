@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Problem9 {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int seats = sc.nextInt();
+        sc.nextLine();
+
+        while (seats > 0) {
+
+            String choice = sc.nextLine();
+
+            if (choice.equalsIgnoreCase("yes")) {
+                seats--;
+
+                System.out.println("Ticket Booked Successfully");
+                System.out.println("Remaining Seats: " + seats);
+            }
+
+            if (seats == 0) {
+                System.out.println("Booking Closed");
+            }
+        }
+    }
+}
